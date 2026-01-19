@@ -49,6 +49,10 @@ Steam 社区动态页面偶发性出现以下问题：
 - `https://steamcommunity.com/profiles/*/myactivity*` - 我的活动
 - `https://steamcommunity.com/my/myactivity*` - 我的活动
 
+## 已知限制
+
+- **前一天动态可能无法加载**：当页面出现布局异常时，Steam 服务器会对前一天的动态请求返回 500 错误（原因不明）。这是 Steam 服务端的限制，脚本无法绕过。例如：今天是 1 月 20 日，页面异常时 1 月 19 日的动态可能无法获取。
+
 ## 调试命令
 
 在浏览器控制台 (F12) 中可以使用以下命令：
